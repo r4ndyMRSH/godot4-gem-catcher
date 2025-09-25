@@ -18,3 +18,7 @@ func _process(delta: float) -> void:
 	position.x = clampf(position.x,
 	get_viewport_rect().position.x + 52.0,
 	get_viewport_rect().end.x - 52.0)
+
+
+func _on_area_entered(area: Area2D) -> void:
+	print("Collision whit Paddle Detected!")
